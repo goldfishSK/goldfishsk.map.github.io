@@ -33,8 +33,6 @@
 			map.addOverlay(mk);
 			map.panTo(r.point);
 			var pointD= new BMap.Point(108.95009828 , 34.2997999);
-           // D是终点地址 需要get  
-			// C是浏览器定位地址  
 			var pointC= new BMap.Point(r.point.lng,r.point.lat);
 			alert('您的位置：'+r.point.lng+','+r.point.lat);
 		
@@ -48,9 +46,11 @@
 //   下面两行是在地图上描绘曲线  
 var p1 = new BMap.Point(r.point.lng,r.point.lat);
 var p2 = new BMap.Point(108.95009828 , 34.2997999);
-// 初始化坐标  
-        var driving = new BMap.DrivingRoute(map, {renderOptions:{map: map, autoViewport: true}});
-        driving.search(p1, p2);
+
+var driving = new BMap.DrivingRoute(map, {renderOptions:{map: map, autoViewport: true}});
+driving.search(p1, p2);
+
+
 		}
 		else {
             // 错误
@@ -58,7 +58,21 @@ var p2 = new BMap.Point(108.95009828 , 34.2997999);
 		}        
 	},{enableHighAccuracy: true});
 
-
+  var point = new BMap.Point(108.95009828 , 34.2997999);
+   var marker = new BMap.Marker(point);  // 创建标注
+	map.addOverlay(marker);              // 将标注添加到地图中
+	map.centerAndZoom(point, 15);
+	var opts = {
+	  width : 200,     // 信息窗口宽度
+	  height: 100,     // 信息窗口高度
+	  title : "海底捞王府井店" , // 信息窗口标题
+	  enableMessage:true,//设置允许信息窗发送短息
+	  message:"亲耐滴，晚上一起吃个饭吧？戳下面的链接看下地址喔~"
+	}
+	var infoWindow = new BMap.InfoWindow("地址：北京市东城区王府井大街88号乐天银泰百货八层", opts);  // 创建信息窗口对象 
+	marker.addEventListener("click", function(){          
+		map.openInfoWindow(infoWindow,point); //开启信息窗口
+	});
 
   
 

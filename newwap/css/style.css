@@ -1,0 +1,727 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    font-size: 1.1rem;
+}
+
+body {
+    height: 100%;
+    background-color: #f4f4f4;
+}
+
+.nav_nav {
+    position: fixed;
+    background-color: red;
+    height: 3.5rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 999;
+    margin-top: -20px;
+}
+
+.nav_nav a {
+    display: block;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+}
+
+.nav_nav a img {
+    display: block;
+    height: 100%;
+    width: 60%;
+}
+
+.nav_nav .nav_right {
+    display: inline-block;
+    float: right;
+    width: 10%;
+    height: 103%;
+}
+
+.nav_nav .nav_left {
+    display: inline-block;
+    float: right;
+    height: 96%;
+    border-radius: 5px 0px 0px 5px;
+    width: 40%;
+}
+
+
+/*  底部底部  底部  底部  */
+
+.foolter_bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    background-color: rgba(238, 238, 238, 0.9);
+    border-top: #dcdcdc 1px solid;
+    z-index: 900;
+    padding: 0px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.foolter_bar .bar_div {
+    width: 100%;
+    height: 45px;
+    padding: 0;
+    margin: 0;
+}
+
+.foolter_bar .bar_div ul {
+    float: left;
+    width: 100%;
+}
+
+.foolter_bar .bar_div ul li {
+    display: inline-block;
+    width: 18%;
+    height: 45px;
+    text-align: center;
+    margin: 0px;
+    list-style: none;
+}
+
+.foolter_bar .bar_div ul li a {
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    width: 45px;
+    position: relative;
+    margin: auto;
+    text-decoration: none;
+}
+
+.foolter_bar .bar_div ul li i {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+}
+
+.foolter_bar .bar_div ul li span {
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+}
+
+.vf_1 {
+    background: url(../img/pub_main.png) no-repeat;
+    background-size: auto 400px;
+    background-position: 0 0px;
+}
+
+.vf_2 {
+    background: url(../img/pub_main.png) no-repeat;
+    background-size: auto 400px;
+    background-position: 0 -37px;
+}
+
+.vf_3 {
+    background: url(../img/pub_main.png) no-repeat;
+    background-size: auto 400px;
+    background-position: 0 -70px;
+}
+
+.vf_4 {
+    background: url(../img/pub_main.png) no-repeat;
+    background-size: auto 400px;
+    background-position: -3px -102px;
+}
+
+.vf_5 {
+    background: url(../img/pub_main.png) no-repeat;
+    background-size: auto 400px;
+    background-position: -1px -132px;
+}
+
+
+/*banner*/
+
+#banner {
+    width: 100%;
+    height: 400px;
+    margin: 20px auto;
+    position: relative;
+}
+
+#left {
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    background: url(http://www.jq22.com/demo/jqueryBanner20170111/img/left-1.png) no-repeat center center;
+    top: 42%;
+    display: inline-block;
+    z-index: 9;
+    left: 10%;
+}
+
+#right {
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    background: url(http://www.jq22.com/demo/jqueryBanner20170111/img/right-1.png) no-repeat center center;
+    top: 42%;
+    display: inline-block;
+    z-index: 9;
+    right: 10%;
+}
+
+.pic {
+    width: 100%;
+    height: 400px;
+}
+
+.pic img {
+    display: none;
+    position: absolute;
+}
+
+
+/*  admin   */
+
+.one_admin {
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.one_admin ul li {
+    display: inline-block;
+    width: 20%;
+    list-style: none;
+    float: left;
+    margin-top: 2%;
+}
+
+.one_admin ul li a {
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.one_admin ul li img {
+    display: block;
+    width: 40%;
+    margin-left: 30%;
+}
+
+.one_admin ul li span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #616161;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+/*广告*/
+
+.two {
+    display: block;
+    width: 100%;
+    height: 66px;
+}
+
+.two img {
+    display: block;
+    width: 100%;
+    height: 66px;
+}
+
+
+/* 品牌推荐  */
+
+.there {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.there dl {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid orange;
+}
+
+.there dl dt {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.there dl img {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.there dl dd {
+    width: 50%;
+    float: left;
+}
+
+.there dl dd span {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.there ul {
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #eeeeee;
+}
+
+.there ul li {
+    width: 49.8%;
+    overflow: hidden;
+    float: left;
+    border-bottom: 1px solid orange;
+    border-left: 1px solid orange;
+}
+
+.there ul li img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: -5%;
+}
+
+
+/* 每日必看  */
+
+.four {
+    margin-top: 15px;
+}
+
+.four_nav {
+    display: inline-block;
+    float: left;
+    height: 40px;
+}
+
+.four_title {
+    display: block;
+    line-height: 40px;
+    width: 150px;
+    float: right;
+    text-align: right;
+    border-left: 5px solid red;
+    font-size: 1.6rem;
+}
+
+.four_title_right {
+    display: inline-block;
+    float: right;
+    height: 40px;
+}
+
+.four_more {
+    display: inline-block;
+    float: right;
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+
+.four_text {
+    display: inline-block;
+    float: right;
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+
+.four_head {
+    display: block;
+    height: 40px;
+}
+
+
+/*four 商品展示*/
+
+
+/* 家具推荐  */
+
+.fitment {
+    height: 4rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fitment_recommend {
+    height: 4rem;
+    text-align: center;
+}
+
+.fitment_recommend h2 {
+    line-height: 4rem;
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+
+.fitment_show {
+    background-color: #fff;
+}
+
+.fitment_show_left {
+    display: inline-block;
+    float: left;
+    width: 49.6%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border-right: 1px solid #c6c6c6;
+}
+
+.fitment_show ul {
+    display: block;
+    width: 100%;
+    list-style: none;
+    float: left;
+}
+
+.fitment_show ul li {
+    display: inline-block;
+    width: 49.9%;
+    height: 27rem;
+    float: left;
+    overflow: hidden;
+}
+
+.fitment_show ul li a {
+    text-decoration: none;
+}
+
+.fitment_show ul li a h3 {
+    display: block;
+    line-height: 16rem;
+    font-size: 2.1rem;
+    color: #000;
+}
+
+.fitment_show ul li a p {
+    display: block;
+    line-height: 3rem;
+    height: 3rem;
+    overflow: hidden;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #F7A945;
+}
+
+.fitment_show ul li a span {
+    font-size: 2rem;
+    color: #ff0000;
+    float: left;
+}
+
+.fitment_show ul li img {
+    display: block;
+    width: 100%;
+}
+
+.fitment_show_right {
+    display: inline-block;
+    width: 49.9%;
+}
+
+.fitment_down {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    float: left;
+    text-align: left;
+    height: 27rem;
+}
+
+.fitment_down ul {
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.fitment_down ul li {
+    display: inline-block;
+    width: 24.8%;
+    float: left;
+}
+
+.fitment_down ul li a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    padding-bottom: 1rem;
+    border: 1px solid #c6c6c6;
+    padding-left: 1rem;
+}
+
+.fitment_down ul li a h3 {
+    display: block;
+    line-height: 4rem;
+    font-size: 1.9rem;
+}
+
+.fitment_down ul li a p {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.fitment_down ul li a span {
+    display: block;
+    width: 100%;
+}
+
+.fitment_down ul li a img {
+    display: block;
+    width: 80%;
+}
+
+
+/*  墙地材料 */
+
+.material {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+}
+
+.material .material_head {
+    display: block;
+    width: 100%;
+    float: left;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.material_head ul {
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.material_head ul li {
+    display: inline-block;
+    list-style: none;
+    float: left;
+    width: 49%;
+    text-align: right;
+    padding-left: 0.5%;
+}
+
+.material_head ul li img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.meterial_head_li {
+    margin-left: 0.2rem;
+}
+
+.meterial_cont {
+    display: block;
+    width: 100%;
+}
+
+.meterial_cont a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.meterial_cont ul {
+    display: block;
+    width: 100%;
+    list-style: none;
+}
+
+.meterial_cont ul li {
+    display: inline-block;
+}
+
+.meterial_cont .ial_cont_li {
+    width: 19%;
+}
+
+.ial_cont_li_div {
+    display: block;
+    width: 100%;
+    height: 9rem;
+    text-align: center;
+}
+
+.ial_cont_li_div strong {
+    font-size: 1.8rem;
+}
+
+.ial_cont_li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.ial_cont_li_div p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 2.5rem;
+    color: #9B9B9B;
+}
+
+.cont_li_span {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.cont_li_span span {
+    font-size: 2rem;
+    line-height: 2rem;
+    color: red;
+}
+
+.head_float_p {
+    display: block;
+    position: absolute;
+    text-align: left;
+    font-family: "微软雅黑";
+}
+
+.head_float_p h3 {
+    display: block;
+    line-height: 3rem;
+}
+
+.head_float_p p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 50%;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.head_float_p span {
+    display: block;
+    color: red;
+    font-size: 1.4rem;
+}
+
+
+/*下面4个*/
+
+.meter_recommend h2 {
+    line-height: 4rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.wrap {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.wrap ul {
+    overflow: hidden;
+    position: absolute;
+    width: 1600px;
+    left: 0;
+    top: 0;
+    _height: 1px;
+}
+
+.wrap ul li {
+    float: left;
+    width: 400px;
+    list-style: none;
+}
+
+.son_oen {
+    display: block;
+    width: 100%;
+}
+
+.son_oen ul {
+    width: 100%;
+    list-style: none;
+    float: left;
+    margin: 0;
+    border-top: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.son_oen ul li {
+    display: inline-block;
+    width: 32.5%;
+    border-right: 1px solid #c6c6c6;
+}
+
+.son_one_top {
+    display: block;
+    width: 100%;
+}
+
+.son_one_top strong {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 1.3rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.son_one_top span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.15rem;
+    color: #9b9b9b;
+    line-height: 3rem;
+}
+
+
+/* 广告层 */
+
+.advert {
+    display: block;
+    width: 100%;
+}
+
+.advert img {
+    display: block;
+    width: 100%;
+}
+
+
+/* 家具 */
+
+.furniture {
+    display: block;
+    width: 100%;
+    height: 3000px;
+}
+
+.furniture .furnitrure_left {
+    display: inline-block;
+    width: 48.8%;
+    float: left;
+}
+
+.furnitrure_left img {
+    display: block;
+    width: 100%;
+}
